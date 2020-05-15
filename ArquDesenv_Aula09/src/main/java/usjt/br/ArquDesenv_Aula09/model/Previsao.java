@@ -16,16 +16,15 @@ public class Previsao implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String diaDaSemana;
-	private Double tempMinima, tempMaxima;
+	private Double tempMinima;
+	private Double tempMaxima;
 	private Double umidade;
 	private String descricao;
-	private Double data,hora;
+	private Integer data;
+	private Integer hora;
 	private Double latitude;
 	private Double longitude;
 	
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
 	public Long getId() {
 		return id;
 	}
@@ -44,16 +43,16 @@ public class Previsao implements Serializable {
 	public String getDescricao() {
 		return descricao;
 	}
-	public Double getData() {
+	public Integer getData() {
 		return data;
 	}
-	public Double getHora() {
+	public Integer getHora() {
 		return hora;
 	}
-	public Double getlatitude() {
+	public Double getLatitude() {
 		return latitude;
 	}
-	public Double longitude() {
+	public Double getLongitude() {
 		return longitude;
 	}
 	public void setId(Long id) {
@@ -74,18 +73,18 @@ public class Previsao implements Serializable {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public void setData(Double data) {
+	public void setData(Integer data) {
 		this.data = data;
+	}
+	public void setHora(Integer hora) {
+		this.hora = hora;
 	}
 	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
-	}
-	public void setHora(Double hora) {
-		this.hora = hora;
 	}
 	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
 	
-	
+
 }

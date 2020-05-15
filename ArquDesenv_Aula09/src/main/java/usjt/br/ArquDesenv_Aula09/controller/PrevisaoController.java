@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import usjt.br.AquDesenv_Aula09.service.PrevisaoService;
 import usjt.br.ArquDesenv_Aula09.model.Previsao;
+import usjt.br.ArquDesenv_Aula09.service.PrevisaoService;
 
 @Controller
 public class PrevisaoController {
